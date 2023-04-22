@@ -9,6 +9,8 @@ font-family: 'Tilt Prism', cursive; */
     box-sizing: border-box;
     overflow-x: hidden;
     text-decoration: none;
+    list-style: none;
+    cursor: default;
 }
 
 body{
@@ -25,6 +27,7 @@ body{
     position: fixed;
     transition: 0.3s ease-in-out;
     backdrop-filter: blur(5px);
+    z-index: 999;
 }
 .logo{
     height: 80px;
@@ -51,15 +54,17 @@ body{
     color: #feedc4;
     text-align: center;
     text-shadow: 2px 2px 2px black;
-    font-size: 20vh;
+    font-size: 10vw;
     font-family: 'Bruno Ace', cursive;
   }
-   
+  #layer1 img{
+    width: 11vw;
+  }
   #layer2 {
     text-align: center;
-    text-shadow: 2px 1px 2px black;
-    color: #EFD28E;
-    font-size: 8vh;
+    text-shadow: 2px 1px 2px #EFD28E;
+    color: #2d1f00;
+    font-size: 4vw;
     margin: 0.5em 0;
     padding-bottom: 2em;
     font-family: 'Italianno', cursive;
@@ -68,14 +73,14 @@ body{
   
   #travel1{
     top: 26vw;
-    margin-left: 55vw;
+    transform: translateX(55vw);
     width: 100vw;
     position: absolute;
   }
   #travel2{
     top: 26vw;
-    /* right: 55vw; */
-    margin-right: 55vw;
+    transform: translateX(-55vw);
+    /* margin-right: 55vw; */
     width: 100vw;
     position: absolute;
   }
@@ -87,24 +92,47 @@ body{
     font-family: 'Tilt Prism', cursive;
     color: #C9753D;
     margin: 3vw;
+    letter-spacing: 2px;
   }
 .team_desc{
     display: flex;
 justify-content: center;
     width: 50vw;
+    margin: 0;
+    padding: 0;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .team_desc img{
   position: relative;
+  width: 45vw;
 }
 .teamd{
     width: 50vw;
     align-items: center;
 }
+.content{
+  color: #0A1533;
+  font-family: 'Signika', sans-serif;
+  position: absolute;
+  margin: 8vw 9vw;
+  text-align: justify;
+  font-size: 1.1vw;
+}
+.content img{
+  width: 7vw;
+  margin: 3vw;
+margin-left: 9vw;
+}
+.team_mem{
+  padding: 3vw;
+}
 .team_mem img{
     width: 10vw;
     display: flex; 
+}
+.teamm h3{
+  margin-left: 0;
 }
 .teamm {
     display: flex;
@@ -133,26 +161,89 @@ justify-content: center;
   align-items: center;
   font-size: 2vw;
 }
-
+.details{
+  display: flex;
+}
+.prblmcon{
+  color: #EFD28E;
+  font-family: 'Signika', sans-serif;
+  width: 40vw;
+  margin: 2vw;
+  margin-left: 5vw;
+  text-align: left;
+  font-size: 1.4vw;
+  line-height: 3.5vh;
+}
+.arrowimg{
+  width: 10vw;
+  margin-top: 7vw;
+}
+.motidiv h3{
+  text-align: right;
+}
+.motidiv{
+  width: 40vw;
+}
+.moticon{
+  color: #EFD28E;
+  font-family: 'Signika', sans-serif;
+  width: 35vw;
+  margin: 2vw;
+  margin-right: 5vw;
+  text-align: right;
+  font-size: 1.4vw;
+  line-height: 3.5vh;
+}
+.titlecontext{
+  display: inline-flex;
+  align-items: baseline;
+}
+.pointer{
+  width: 1.3vw;
+  margin-left: 0.5vw;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.titlecontext a{
+  font-family: 'Italianno', cursive;
+  font-size: 2vw;
+  vertical-align: middle;
+  color: #EFD28E;
+  cursor: pointer;
+}
 .image-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  /* grid-gap: 10px; */
 }
 
 .image-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  flex-direction: column;
 }
 
 .image-item img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
+  cursor: pointer;
 }
-.image-item img:hover{
-  transform: rotate(90deg);
+.image-item h5{
+  font-family: 'Signika', sans-serif;
+  color: #feedc4;
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 0 2vw;
+}
+.image-item a{
+  margin-bottom: -1vw;
+  margin-top: 4vw;
+  text-align: center;
+}
+.image-item a img:hover{
+  transition: 0.5s ease-in-out;
+  transform: rotate(360deg);
 }
 
 
@@ -162,5 +253,6 @@ justify-content: center;
     color: white;
     font-family: 'Signika', sans-serif;
     text-shadow: 2px 1px 1px black;
+    margin-top: 100px;
     margin: 30px 0;
   }
