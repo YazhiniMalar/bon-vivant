@@ -24,7 +24,7 @@ body{
     align-items: center;
     position: fixed;
     transition: 0.3s ease-in-out;
-    
+    backdrop-filter: blur(5px);
 }
 .logo{
     height: 80px;
@@ -83,7 +83,7 @@ body{
     display: inline-flex;
 }
   h3{
-    font-size: 30px;
+    font-size: 3vw;
     font-family: 'Tilt Prism', cursive;
     color: #C9753D;
     margin: 3vw;
@@ -105,15 +105,11 @@ justify-content: center;
 .team_mem img{
     width: 10vw;
     display: flex; 
-    /* justify-content: center; 
-    align-items: center;  */
-    /* flex-wrap: wrap;  */
 }
 .teamm {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    /* width: 500vw; */
   }
   .yazh,.mems{
     display: flex;
@@ -148,6 +144,7 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .image-item img {
