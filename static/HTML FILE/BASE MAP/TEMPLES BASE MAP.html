@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>BAIRAVAR TEMPLE</title>
+<title>TEMPLES BASE MAP</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <base target="_blank">
 <link rel="stylesheet" type="text/css" href="./Qgis2threejs.css">
@@ -96,7 +96,7 @@
 
 <!-- header and footer -->
 <div id="header">TEMPLES</div>
-<div id="footer">BAIRAVAR TEMPLE</div>
+<div id="footer">TEMPLES IN MADURAI</div>
 
 <!-- layer panel -->
 <div id="layerpanel">
@@ -115,7 +115,7 @@
 Q3D.Config.allVisible = true;
 Q3D.Config.localMode = true;
 Q3D.Config.northArrow.enabled = true;
-Q3D.Config.northArrow.color = 0x10dff2;
+Q3D.Config.northArrow.color = 0xf7e80f;
 
 var container = document.getElementById("view"),
     app = Q3D.application,
@@ -124,7 +124,7 @@ var container = document.getElementById("view"),
 app.init(container);       // initialize viewer
 
 // load the scene
-app.loadSceneFile("./data/BAIRAVAR_TEMPLE/scene.js", function (scene) {
+app.loadSceneFile("./data/TEMPLES BASE MAP/scene.js", function (scene) {
   // scene file has been loaded
   app.start();
 }, function (scene) {
