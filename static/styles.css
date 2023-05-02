@@ -21,21 +21,37 @@ body{
     background-color: #2A2539;
 }
 
-.nav_bar{
+.navi{
     width: 100vw;
     background: linear-gradient(185deg, rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0));
     height: 5vw;
-    display: flex;
-    vertical-align: middle;
-    align-items: center;
+    justify-content: space-between;
     position: fixed;
     transition: 0.3s ease-in-out;
     backdrop-filter: blur(5px);
     z-index: 999;
 }
 .logonav{
-    height: 5vw;
+    height: 4.5vw;
     margin-left: 10px;
+}
+.tcelogo{
+  height: 4.5vw;
+  margin-right: 20px;
+}
+.nav_right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+}
+.clg{
+  line-height: 20px;
+}
+.nav_bar{
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
 }
 .title {
     margin-left: 10px;
@@ -156,7 +172,7 @@ margin-left: 9vw;
   display: flex;
   flex-direction: row;
 }
-.mems p, .yazh p{
+.mems p, .yazh p, .mentor{
   margin: 10px;
   display: flex;
   flex-direction: row; 
